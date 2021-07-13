@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="22f0-18eb-8fd1-99fa" name="Reign in Hell" revision="5" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="22f0-18eb-8fd1-99fa" name="Reign in Hell" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="cc7c-c1bb-7f20-8378" name=" Souls" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -86,6 +86,18 @@
     <categoryEntry id="b93b-d800-9ee4-11fd" name="Lesser Demon" hidden="false"/>
     <categoryEntry id="8bfb-862a-17d4-a3b6" name="Greater Demon" hidden="false"/>
     <categoryEntry id="102e-4c9e-ca12-0454" name="Superior Demon" hidden="false"/>
+    <categoryEntry id="314a-df0e-b55d-4554" name="Combat Minus One" hidden="false"/>
+    <categoryEntry id="eb2d-84e6-ea07-eedc" name="Life Plus Two" hidden="false"/>
+    <categoryEntry id="4204-2b1a-4e10-3498" name="Combat Minus Two" hidden="false"/>
+    <categoryEntry id="b1d4-e3b5-ca18-b24f" name="Life Minus One" hidden="false"/>
+    <categoryEntry id="f657-5b28-7322-3235" name="Move Plus One" hidden="false"/>
+    <categoryEntry id="dd6d-e6e5-3efa-68a6" name="Move Plus Two" hidden="false"/>
+    <categoryEntry id="f23f-8f5d-4b3a-13c8" name="Move Minus One" hidden="false"/>
+    <categoryEntry id="ac5d-8240-f950-a068" name="Move Minus Two" hidden="false"/>
+    <categoryEntry id="0248-043c-5933-9c5d" name="Combat Plus One" hidden="false"/>
+    <categoryEntry id="ad2b-8ccc-627b-208b" name="Combat Plus Two" hidden="false"/>
+    <categoryEntry id="aa39-3f43-07c3-7f13" name="Life Minus Two" hidden="false"/>
+    <categoryEntry id="3d4f-0267-2d3e-902f" name="Life Plus One" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="f8b2-aaaf-5a8a-eb0d" name="One-off" hidden="false">
@@ -137,28 +149,28 @@
     </forceEntry>
     <forceEntry id="1b53-dd9a-887c-b4a3" name="Campaign" hidden="false">
       <categoryLinks>
-        <categoryLink id="719f-f226-04df-e277" name="Cabal Philosophy" hidden="false" targetId="37f0-28f2-907e-0230" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e56-486d-729e-1199" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="360d-c3fc-f431-b759" type="min"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="7fc2-020b-8e5c-0d20" name="Devout" hidden="false" targetId="e534-8b74-6056-9e87" primary="false">
-          <constraints>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f096-e377-8062-230b" type="min"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d151-6bbe-523d-62f0" type="max"/>
-          </constraints>
-        </categoryLink>
-        <categoryLink id="6ea9-b5f9-f4a4-3551" name="Game options" hidden="false" targetId="97dc-ef12-50e1-0522" primary="false"/>
-        <categoryLink id="844d-8f9c-c312-807c" name="Leader" hidden="false" targetId="3436-8e6e-a8f6-716e" primary="false">
+		<categoryLink id="844d-8f9c-c312-807c" name="Leader" hidden="false" targetId="3436-8e6e-a8f6-716e" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="907e-c1b3-aa2c-e4bf" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2983-060e-bcfd-3b76" type="min"/>
           </constraints>
         </categoryLink>
+		<categoryLink id="7fc2-020b-8e5c-0d20" name="Devout" hidden="false" targetId="e534-8b74-6056-9e87" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f096-e377-8062-230b" type="min"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d151-6bbe-523d-62f0" type="max"/>
+          </constraints>
+        </categoryLink>
         <categoryLink id="5931-bb40-fdf1-4027" name="Lesser Demon" hidden="false" targetId="b93b-d800-9ee4-11fd" primary="false"/>
         <categoryLink id="73b1-59c2-6d78-e6c2" name="Greater Demon" hidden="false" targetId="8bfb-862a-17d4-a3b6" primary="false"/>
         <categoryLink id="cfaf-839c-b3d6-a758" name="Superior Demon" hidden="false" targetId="102e-4c9e-ca12-0454" primary="false"/>
+		<categoryLink id="719f-f226-04df-e277" name="Cabal Philosophy" hidden="false" targetId="37f0-28f2-907e-0230" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e56-486d-729e-1199" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="360d-c3fc-f431-b759" type="min"/>
+          </constraints>
+        </categoryLink>
+		<categoryLink id="6ea9-b5f9-f4a4-3551" name="Game options" hidden="false" targetId="97dc-ef12-50e1-0522" primary="false"/>
         <categoryLink id="959f-e730-1e64-997d" name="Minion" hidden="false" targetId="0894-68fa-8134-6e32" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bbc-8b2f-9694-2f8b" type="max"/>
@@ -207,7 +219,7 @@
       <profiles>
         <profile id="6e34-016b-77f5-6597" name="Soul of Lightning" hidden="false" typeId="a678-a0a7-3ad1-49c1" typeName="Leader Essence">
           <characteristics>
-            <characteristic name="Description" typeId="1ce9-d29c-8132-201d">Increases your Leader’s Move by 1&quot;. ([Move], [Life], [Combat] are automaticaly increased in demon&apos;s profile by Battlescribe)</characteristic>
+            <characteristic name="Description" typeId="1ce9-d29c-8132-201d">Increases your Leader’s Move by 1&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -237,7 +249,7 @@
       <profiles>
         <profile id="89e7-4d6d-605f-0f3b" name="Unyielding Essence" hidden="false" typeId="a678-a0a7-3ad1-49c1" typeName="Leader Essence">
           <characteristics>
-            <characteristic name="Description" typeId="1ce9-d29c-8132-201d">Increases your Leader’s Life by 2. ([Move], [Life], [Combat] are automaticaly increased in demon&apos;s profile by Battlescribe)</characteristic>
+            <characteristic name="Description" typeId="1ce9-d29c-8132-201d">Increases your Leader’s Life by 2.</characteristic>
           </characteristics>
         </profile>
       </profiles>
