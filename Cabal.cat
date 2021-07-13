@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="daba-95b7-302e-2a1e" name="Warrior" hidden="false" collective="false" import="true" targetId="1d82-4f9a-8828-9e24" type="selectionEntry"/>
     <entryLink id="b0b7-3ab3-a8f5-2c9e" name="Void Demon" hidden="false" collective="false" import="true" targetId="c9c4-3f0d-a7eb-2249" type="selectionEntry"/>
@@ -200,10 +200,41 @@
         </profile>
         <profile id="423e-7f76-653d-f119" name="Warrior" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
           <modifiers>
-            <modifier type="append" field="name" value=" ">
-              <conditions>
-                <condition field="selections" scope="1d82-4f9a-8828-9e24" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e9c-492f-15d5-1a62" type="atLeast"/>
-              </conditions>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -268,10 +299,41 @@
         </profile>
         <profile id="c807-dc50-9618-c5b8" name="Schemer" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
           <modifiers>
-            <modifier type="append" field="name" value="  ">
-              <conditions>
-                <condition field="selections" scope="c90a-296a-9c40-cb16" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a34a-6854-2446-c708" type="atLeast"/>
-              </conditions>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -336,10 +398,41 @@
         </profile>
         <profile id="3a34-04ba-08a4-beec" name="Zealot" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
           <modifiers>
-            <modifier type="append" field="name" value=" ">
-              <conditions>
-                <condition field="selections" scope="5b3d-2e95-48c0-bc94" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a34a-6854-2446-c708" type="atLeast"/>
-              </conditions>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5b3d-2e95-48c0-bc94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -393,21 +486,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c9c4-3f0d-a7eb-2249" name="Void Demon" hidden="true" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="d650-23ff-c86c-15a6" value="1.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bde0-1fa8-c37e-3952" type="equalTo"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="e47a-7536-2936-1e06" value="1.0"/>
-            <modifier type="set" field="3cde-dca6-8a09-319e" value="1.0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+        <modifier type="set" field="e47a-7536-2936-1e06" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bde0-1fa8-c37e-3952" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bde0-1fa8-c37e-3952" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cde-dca6-8a09-319e" type="min"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e47a-7536-2936-1e06" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d650-23ff-c86c-15a6" type="min"/>
       </constraints>
       <profiles>
         <profile id="62c0-da1a-0a00-fcfc" name="Void Demon" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
@@ -421,6 +519,42 @@
               <conditions>
                 <condition field="selections" scope="c9c4-3f0d-a7eb-2249" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -552,34 +686,65 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5cb6-db64-fd4c-e792" name="Tallyman" hidden="true" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb0-10d0-eb79-3f12" type="equalTo"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="ae3c-7b77-a268-6796" value="1.0"/>
-            <modifier type="set" field="2503-337b-e8c9-92b3" value="1.0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+        <modifier type="set" field="2503-337b-e8c9-92b3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb0-10d0-eb79-3f12" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="2503-337b-e8c9-92b3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bb0-10d0-eb79-3f12" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2503-337b-e8c9-92b3" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae3c-7b77-a268-6796" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2503-337b-e8c9-92b3" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f83-a5db-dc8a-5d86" type="max"/>
       </constraints>
       <profiles>
         <profile id="3e49-e409-eecc-789e" name="Tallyman" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
           <modifiers>
-            <modifier type="append" field="name" value=" ">
-              <conditions>
-                <condition field="selections" scope="5cb6-db64-fd4c-e792" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19aa-48d1-a9cd-a095" type="atLeast"/>
-              </conditions>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
-            <modifier type="append" field="name" value=" ">
-              <conditions>
-                <condition field="selections" scope="5cb6-db64-fd4c-e792" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
-              </conditions>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -711,21 +876,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4a4d-fc05-c3ff-3aa9" name="Succubus" hidden="true" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="ff76-493f-9b7a-9df0" value="1.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="4797-42e3-0475-57a6" value="1.0"/>
-            <modifier type="set" field="e5e5-0d06-7952-7b7e" value="1.0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+        <modifier type="set" field="4797-42e3-0475-57a6" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4797-42e3-0475-57a6" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5e5-0d06-7952-7b7e" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff76-493f-9b7a-9df0" type="min"/>
       </constraints>
       <profiles>
         <profile id="7f6b-cade-51ba-8205" name="Succubus" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
@@ -739,6 +909,42 @@
               <conditions>
                 <condition field="selections" scope="4a4d-fc05-c3ff-3aa9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -873,21 +1079,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ce64-d63f-9516-933e" name="Madness Demon" hidden="true" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3d9-e68e-c119-2102" type="equalTo"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="8a74-76d7-2b34-56e2" value="1.0"/>
-            <modifier type="set" field="199d-7f8c-2d2d-fb10" value="1.0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+        <modifier type="set" field="199d-7f8c-2d2d-fb10" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3d9-e68e-c119-2102" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="7cd3-e844-899b-b3e5" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3d9-e68e-c119-2102" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="199d-7f8c-2d2d-fb10" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a74-76d7-2b34-56e2" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cd3-e844-899b-b3e5" type="min"/>
       </constraints>
       <profiles>
         <profile id="402d-437a-6ff6-a037" name="Madness Demon" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
@@ -901,6 +1112,42 @@
               <conditions>
                 <condition field="selections" scope="ce64-d63f-9516-933e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -1032,21 +1279,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="05b1-f393-0a63-8e64" name="Lord of the Pit" hidden="true" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1a5-013b-a2a3-9831" type="equalTo"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="8639-ce64-63d2-0d64" value="1.0"/>
-            <modifier type="set" field="ed71-9e22-ccd9-b81d" value="1.0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+        <modifier type="set" field="8639-ce64-63d2-0d64" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1a5-013b-a2a3-9831" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="66d1-833c-ce27-54d3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1a5-013b-a2a3-9831" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8639-ce64-63d2-0d64" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed71-9e22-ccd9-b81d" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8639-ce64-63d2-0d64" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66d1-833c-ce27-54d3" type="max"/>
       </constraints>
       <profiles>
         <profile id="3085-52a7-dc8f-cb2a" name="Lord of the Pit" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
@@ -1065,6 +1317,42 @@
               <conditions>
                 <condition field="selections" scope="05b1-f393-0a63-8e64" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -1199,21 +1487,26 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="5cc9-1ac0-b5c6-152d" name="Executioner" hidden="true" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
           </conditions>
-          <modifiers>
-            <modifier type="set" field="08d2-ed38-78f2-f509" value="1.0"/>
-            <modifier type="set" field="84af-3eef-0b80-9bbf" value="1.0"/>
-            <modifier type="set" field="hidden" value="false"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </modifier>
+        <modifier type="set" field="84af-3eef-0b80-9bbf" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="9bde-d39c-1c5f-9593" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84af-3eef-0b80-9bbf" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d2-ed38-78f2-f509" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9bde-d39c-1c5f-9593" type="min"/>
       </constraints>
       <profiles>
         <profile id="aa2e-74e9-ce39-f3df" name="Executioner" hidden="false" typeId="b8bf-34dc-6f26-5b03" typeName="Demon">
@@ -1227,6 +1520,42 @@
               <conditions>
                 <condition field="selections" scope="5cc9-1ac0-b5c6-152d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -1388,6 +1717,42 @@
                 <condition field="selections" scope="9f11-4270-8cad-7683" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">4</characteristic>
@@ -1531,6 +1896,42 @@
                 <condition field="selections" scope="153f-9201-8d9d-763f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">4</characteristic>
@@ -1668,6 +2069,42 @@
               <conditions>
                 <condition field="selections" scope="14fe-4235-27f2-0fcd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="14fe-4235-27f2-0fcd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -1810,6 +2247,42 @@
                 <condition field="selections" scope="6e2b-bc5d-fbc4-e97d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">5</characteristic>
@@ -1920,10 +2393,41 @@
                 <condition field="selections" scope="1108-18be-2eb4-f184" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="39b2-5fc5-14f4-29b3" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="append" field="name" value=" ">
-              <conditions>
-                <condition field="selections" scope="1108-18be-2eb4-f184" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
-              </conditions>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2065,6 +2569,42 @@
               <conditions>
                 <condition field="selections" scope="b878-b2d7-8047-ec20" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2218,6 +2758,42 @@
                 <condition field="selections" scope="60c9-685f-3128-1d18" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">4</characteristic>
@@ -2313,6 +2889,42 @@
               <conditions>
                 <condition field="selections" scope="d2a7-ca49-4982-f449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2410,6 +3022,42 @@
                 <condition field="selections" scope="f245-de4d-e18b-85e6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">6</characteristic>
@@ -2501,6 +3149,42 @@
                 <condition field="selections" scope="c8ca-e479-2176-1b40" value="14.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c16-ce57-6d57-c4c3" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">8</characteristic>
@@ -2564,6 +3248,42 @@
                 <condition field="selections" scope="299c-5103-baa8-8725" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ed3-778f-f57f-8c2c" type="greaterThan"/>
               </conditions>
             </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">7</characteristic>
@@ -2621,6 +3341,42 @@
               <conditions>
                 <condition field="selections" scope="4c63-a621-3061-08b9" value="14.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9088-2d74-305d-e114" type="atLeast"/>
               </conditions>
+            </modifier>
+            <modifier type="decrement" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="137b-d13e-dda6-0530" value="1">
+              <repeats>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d4f-0267-2d3e-902f" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb2d-84e6-ea07-eedc" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <repeats>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b936-d350-1b5b-fb34" value="1">
+              <repeats>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2722,6 +3478,11 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="c774-a531-e9a7-bdde" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+            <categoryLink id="54a9-4b81-d2b9-70e7" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+            <categoryLink id="4ad1-9ace-7f26-2487" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -2876,6 +3637,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="637d-038e-3856-df83" name="Life Plus Two" hidden="false" targetId="eb2d-84e6-ea07-eedc" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3023,6 +3787,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="ddea-d0b8-77e2-d1d8" name="Combat Minus One" hidden="false" targetId="314a-df0e-b55d-4554" primary="false"/>
+            <categoryLink id="dd63-fc9c-bc7f-ffba" name="Life Plus Two" hidden="false" targetId="eb2d-84e6-ea07-eedc" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3055,6 +3823,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="9dfd-cad6-c51f-e400" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3191,6 +3962,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="7b73-90b2-96b0-6fd0" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3206,6 +3980,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="bb6e-b1ff-60b1-48f6" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3221,6 +3998,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="39bd-8dca-6722-8402" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3240,6 +4020,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="30b2-0b2a-789d-c8d0" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3252,6 +4035,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="5c31-e838-2e84-f521" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3264,6 +4050,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="86da-6a33-86da-5172" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3283,6 +4072,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="a034-8ddb-3dec-427d" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3295,6 +4087,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="f7aa-04b2-4339-560d" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3307,6 +4102,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="03d7-3b68-795c-b502" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3323,6 +4121,10 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="482f-0124-b55e-b2d9" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+            <categoryLink id="037f-f28f-d350-466e" name="Combat Plus Two" hidden="false" targetId="ad2b-8ccc-627b-208b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3343,6 +4145,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="7bbc-08b7-8091-8c7c" name="Combat Minus One" hidden="false" targetId="314a-df0e-b55d-4554" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3355,6 +4160,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="da3a-c0b1-34b3-f3b8" name="Life Minus One" hidden="false" targetId="b1d4-e3b5-ca18-b24f" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3367,6 +4175,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="a15b-f1e9-d7c7-7576" name="Move Minus One" hidden="false" targetId="f23f-8f5d-4b3a-13c8" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3390,6 +4201,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="73f4-ed8c-354f-fb78" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3405,6 +4219,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="50fd-4dfe-6032-802b" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3420,6 +4237,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="8e76-a22b-418a-fb6d" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3427,6 +4247,9 @@
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3440,6 +4263,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="3268-0b21-2c87-c2ae" name="Combat Minus One" hidden="false" targetId="314a-df0e-b55d-4554" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3452,6 +4278,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="e504-0984-757d-d7ba" name="Move Minus One" hidden="false" targetId="f23f-8f5d-4b3a-13c8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3464,6 +4293,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="5f8b-3df7-c6df-1cd7" name="Life Minus One" hidden="false" targetId="b1d4-e3b5-ca18-b24f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3480,6 +4312,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="1c93-fca9-6562-a818" name="Combat Minus Two" hidden="false" targetId="4204-2b1a-4e10-3498" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3492,6 +4327,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="38a5-984a-6b9f-09cb" name="Life Minus Two" hidden="false" targetId="aa39-3f43-07c3-7f13" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3504,6 +4342,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="f8f9-dfc5-685f-3ab8" name="Move Minus Two" hidden="false" targetId="ac5d-8240-f950-a068" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3523,6 +4364,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="e996-5ccb-8d53-b4a1" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3538,6 +4382,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="7425-6d97-bfdf-6d8b" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3550,6 +4397,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="f202-ca21-5efc-e6e7" name="Combat Minus One" hidden="false" targetId="314a-df0e-b55d-4554" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3562,6 +4412,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="49b1-16f2-a680-3c29" name="Move Minus One" hidden="false" targetId="f23f-8f5d-4b3a-13c8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3574,6 +4427,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="c044-b751-660e-0a91" name="Life Minus One" hidden="false" targetId="b1d4-e3b5-ca18-b24f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3589,6 +4445,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="68af-6a9f-1d52-6e8e" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
@@ -3601,15 +4460,39 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e02-8746-2c52-9b30" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="8b66-3529-9e96-caa1" name="Greater Demon" hidden="false" targetId="8bfb-862a-17d4-a3b6" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="15fd-7bb2-ec5b-25c9" name="Evolve to Superior" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8663-7ce8-1b0a-ac45" type="max"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="403e-6c68-3259-b6ee" name="Superior Demon" hidden="false" targetId="102e-4c9e-ca12-0454" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="e5ae-434b-f71f-dac1" name="Leader/Superior Demon Stat Mod" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e5ae-434b-f71f-dac1" name="Leader/Superior Demon Stat Mod" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3436-8e6e-a8f6-716e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="102e-4c9e-ca12-0454" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <selectionEntries>
                 <selectionEntry id="f2df-fe18-4a74-e387" name="Combat +1" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -3622,6 +4505,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="5abd-35ba-0346-4c97" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3637,6 +4523,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="52bf-9cda-c75e-5afc" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3652,6 +4541,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <categoryLinks>
+                    <categoryLink id="e79b-6bd9-1cd5-e459" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
                   </costs>
@@ -3676,6 +4568,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="8436-7b3d-8155-f342" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3688,6 +4583,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="72b4-5665-b2d6-5d1b" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3700,6 +4598,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="6b32-76d0-ea5c-7fd3" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3720,6 +4621,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="c6dc-5b9c-f120-6597" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3732,6 +4636,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="3818-b173-778a-0926" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3744,6 +4651,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="b495-e554-01e1-679d" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3768,6 +4678,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="c96f-ca09-6432-da6a" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3783,6 +4696,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="3918-2d38-12ce-4d64" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3798,6 +4714,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="1f23-8ee7-a68b-4cf0" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3822,6 +4741,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="a5e6-0665-53e8-540e" name="Move Plus One" hidden="false" targetId="f657-5b28-7322-3235" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3837,6 +4759,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="b1bb-63e0-82d5-9d8f" name="Combat Plus One" hidden="false" targetId="0248-043c-5933-9c5d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
@@ -3852,6 +4777,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="629e-628c-1eab-34e3" name="Life Plus One" hidden="false" targetId="3d4f-0267-2d3e-902f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
           </costs>
