@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="daba-95b7-302e-2a1e" name="Warrior" hidden="false" collective="false" import="true" targetId="1d82-4f9a-8828-9e24" type="selectionEntry"/>
     <entryLink id="b0b7-3ab3-a8f5-2c9e" name="Void Demon" hidden="false" collective="false" import="true" targetId="c9c4-3f0d-a7eb-2249" type="selectionEntry"/>
@@ -879,17 +879,17 @@
       <modifiers>
         <modifier type="set" field="ff76-493f-9b7a-9df0" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="4797-42e3-0475-57a6" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1490,17 +1490,17 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="84af-3eef-0b80-9bbf" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="9bde-d39c-1c5f-9593" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9336-16fd-47ae-155c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
