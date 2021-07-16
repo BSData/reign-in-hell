@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="22f0-18eb-8fd1-99fa" name="Reign in Hell" revision="7" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="22f0-18eb-8fd1-99fa" name="Reign in Hell" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="cc7c-c1bb-7f20-8378" name=" Souls" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -149,13 +149,13 @@
     </forceEntry>
     <forceEntry id="1b53-dd9a-887c-b4a3" name="Campaign" hidden="false">
       <categoryLinks>
-		<categoryLink id="844d-8f9c-c312-807c" name="Leader" hidden="false" targetId="3436-8e6e-a8f6-716e" primary="false">
+        <categoryLink id="844d-8f9c-c312-807c" name="Leader" hidden="false" targetId="3436-8e6e-a8f6-716e" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="907e-c1b3-aa2c-e4bf" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2983-060e-bcfd-3b76" type="min"/>
           </constraints>
         </categoryLink>
-		<categoryLink id="7fc2-020b-8e5c-0d20" name="Devout" hidden="false" targetId="e534-8b74-6056-9e87" primary="false">
+        <categoryLink id="7fc2-020b-8e5c-0d20" name="Devout" hidden="false" targetId="e534-8b74-6056-9e87" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f096-e377-8062-230b" type="min"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d151-6bbe-523d-62f0" type="max"/>
@@ -164,13 +164,13 @@
         <categoryLink id="5931-bb40-fdf1-4027" name="Lesser Demon" hidden="false" targetId="b93b-d800-9ee4-11fd" primary="false"/>
         <categoryLink id="73b1-59c2-6d78-e6c2" name="Greater Demon" hidden="false" targetId="8bfb-862a-17d4-a3b6" primary="false"/>
         <categoryLink id="cfaf-839c-b3d6-a758" name="Superior Demon" hidden="false" targetId="102e-4c9e-ca12-0454" primary="false"/>
-		<categoryLink id="719f-f226-04df-e277" name="Cabal Philosophy" hidden="false" targetId="37f0-28f2-907e-0230" primary="false">
+        <categoryLink id="719f-f226-04df-e277" name="Cabal Philosophy" hidden="false" targetId="37f0-28f2-907e-0230" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e56-486d-729e-1199" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="360d-c3fc-f431-b759" type="min"/>
           </constraints>
         </categoryLink>
-		<categoryLink id="6ea9-b5f9-f4a4-3551" name="Game options" hidden="false" targetId="97dc-ef12-50e1-0522" primary="false"/>
+        <categoryLink id="6ea9-b5f9-f4a4-3551" name="Game options" hidden="false" targetId="97dc-ef12-50e1-0522" primary="false"/>
         <categoryLink id="959f-e730-1e64-997d" name="Minion" hidden="false" targetId="0894-68fa-8134-6e32" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bbc-8b2f-9694-2f8b" type="max"/>
@@ -188,6 +188,20 @@
       <categoryLinks>
         <categoryLink id="ebb2-9b25-6e46-fc66" name="New CategoryLink" hidden="false" targetId="97dc-ef12-50e1-0522" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4217-eed6-08f5-cbd2" name="Soul Ledger" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b53-dd9a-887c-b4a3" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ef8-95fd-da74-b097" type="max"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="cb9e-b137-d959-89e0" name="Game Type" hidden="false" collective="false" import="true">
           <constraints>
@@ -196,15 +210,30 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="1307-8aa0-cf5e-72ba" name="Learning Game" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b53-dd9a-887c-b4a3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="03b3-3291-7acc-cd7d" name="Standard Game" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b53-dd9a-887c-b4a3" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <costs>
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="517a-7a77-fef0-f5a3" name="Campaign Game" hidden="false" collective="false" import="true" type="upgrade"/>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
