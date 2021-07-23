@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="daba-95b7-302e-2a1e" name="Warrior" hidden="false" collective="false" import="true" targetId="1d82-4f9a-8828-9e24" type="selectionEntry"/>
     <entryLink id="b0b7-3ab3-a8f5-2c9e" name="Void Demon" hidden="false" collective="false" import="true" targetId="c9c4-3f0d-a7eb-2249" type="selectionEntry"/>
@@ -3943,6 +3943,76 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9d52-782b-cca1-a342" name="Scenario Titles" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="889d-33c2-1a1f-7cf5" name="Beast Slayer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c8f4-3949-96be-ef04" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d82-b866-62b0-24c4" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5eb7-e31a-6779-e2cf" name="Beast Slayer" hidden="false" typeId="ced4-2b3f-b2cf-8dd2" typeName="Title">
+                  <characteristics>
+                    <characteristic name="Description" typeId="a28c-3ad5-7f22-320d">This demon increases their Combat ability by 1 whenever they make a Combat Attack roll against an enemy with a higher Combat ability</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d2c1-c81b-7c14-8b52" name="Liberator of the Forbidden" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fa5-57dc-45d2-b940" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f525-5197-a4fc-5f03" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7170-e623-d94b-6ca4" name="Liberator of the Forbidden" hidden="false" typeId="ced4-2b3f-b2cf-8dd2" typeName="Title">
+                  <characteristics>
+                    <characteristic name="Description" typeId="a28c-3ad5-7f22-320d">This demon may not have their movement reduced for any reason during a battle. (i.e. they ignore movement reducing effects of other demons, they climb at full speed, they ignore the movement reduction of terrain, etc.).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fa89-2def-db85-5ff5" name="Storm Breaker" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6359-e587-7a10-fa66" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="403a-d0ac-1916-24ba" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fd76-e47c-8e66-67a9" name="Storm Breaker" hidden="false" typeId="ced4-2b3f-b2cf-8dd2" typeName="Title">
+                  <characteristics>
+                    <characteristic name="Description" typeId="a28c-3ad5-7f22-320d">If they do, any time they play this scenario in the future, when rolling for the result of the storm on this demon, they are unaffected by the storm on a roll of 1-3 and suffer only 1 damage on a roll of 4-6.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ddc1-ba0d-24dd-b610" name="King of the Hill" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="72f4-8544-2f27-6f06" type="max"/>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="afc5-acb4-37d8-1fd8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b073-0764-8f20-7297" name="King of the Hill" hidden="false" typeId="ced4-2b3f-b2cf-8dd2" typeName="Title">
+                  <characteristics>
+                    <characteristic name="Description" typeId="a28c-3ad5-7f22-320d">This demon adds one additional dice to their Combat Defense rolls whenever they are on or within terrain of any kind.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
     <selectionEntryGroup id="332e-af84-e6ac-277f" name="05 Experience" hidden="false" collective="false" import="true">
       <constraints>
