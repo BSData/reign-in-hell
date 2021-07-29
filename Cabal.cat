@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="daba-95b7-302e-2a1e" name="Warrior" hidden="false" collective="false" import="true" targetId="1d82-4f9a-8828-9e24" type="selectionEntry"/>
     <entryLink id="b0b7-3ab3-a8f5-2c9e" name="Void Demon" hidden="false" collective="false" import="true" targetId="c9c4-3f0d-a7eb-2249" type="selectionEntry"/>
@@ -107,7 +107,7 @@
                 </profile>
                 <profile id="8cfa-8a4b-bf78-d73d" name="Ready to Move" hidden="false" typeId="aa66-8123-2b7b-412f" typeName="Philosophy&apos;s special ability">
                   <characteristics>
-                    <characteristic name="Description" typeId="f14b-889d-82ba-6eb6">Earth-Bound demons increase their Move ability by 1. (Not automaticaly increased!)</characteristic>
+                    <characteristic name="Description" typeId="f14b-889d-82ba-6eb6">Earth-Bound demons increase their Move ability by 1.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -151,7 +151,7 @@
                 </profile>
                 <profile id="264e-8f31-2ff1-a1b7" name="Charismatic Leader" hidden="false" typeId="aa66-8123-2b7b-412f" typeName="Philosophy&apos;s special ability">
                   <characteristics>
-                    <characteristic name="Description" typeId="f14b-889d-82ba-6eb6">When building your cabal, you may recruit one additional Lesser Minion for free. (Substracts 22 souls, aka max. price of Lesser Minion from souls cost. It&apos;s not rule legal this way but at least it doesn&apos;t show an error )</characteristic>
+                    <characteristic name="Description" typeId="f14b-889d-82ba-6eb6">When building your cabal, you may recruit one additional Lesser Minion for free.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -235,6 +235,11 @@
                 <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="1d82-4f9a-8828-9e24" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -335,6 +340,11 @@
                 <repeat field="selections" scope="c90a-296a-9c40-cb16" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">8</characteristic>
@@ -433,6 +443,11 @@
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1d4-e3b5-ca18-b24f" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -555,6 +570,11 @@
                 <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0248-043c-5933-9c5d" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="c9c4-3f0d-a7eb-2249" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -745,6 +765,11 @@
                 <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="5cb6-db64-fd4c-e792" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -945,6 +970,11 @@
                 <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="4a4d-fc05-c3ff-3aa9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -1148,6 +1178,11 @@
                 <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="ce64-d63f-9516-933e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -1354,6 +1389,11 @@
                 <repeat field="selections" scope="05b1-f393-0a63-8e64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">8</characteristic>
@@ -1557,6 +1597,11 @@
                 <repeat field="selections" scope="5cc9-1ac0-b5c6-152d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">5</characteristic>
@@ -1753,6 +1798,11 @@
                 <repeat field="selections" scope="9f11-4270-8cad-7683" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">4</characteristic>
@@ -1932,6 +1982,11 @@
                 <repeat field="selections" scope="153f-9201-8d9d-763f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">4</characteristic>
@@ -2105,6 +2160,11 @@
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2283,6 +2343,11 @@
                 <repeat field="selections" scope="6e2b-bc5d-fbc4-e97d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">5</characteristic>
@@ -2428,6 +2493,11 @@
                 <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f23f-8f5d-4b3a-13c8" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="1108-18be-2eb4-f184" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2605,6 +2675,11 @@
                 <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="b878-b2d7-8047-ec20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -2794,6 +2869,11 @@
                 <repeat field="selections" scope="60c9-685f-3128-1d18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">4</characteristic>
@@ -2925,6 +3005,11 @@
                 <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f657-5b28-7322-3235" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="d2a7-ca49-4982-f449" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd6d-e6e5-3efa-68a6" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -3058,6 +3143,11 @@
                 <repeat field="selections" scope="f245-de4d-e18b-85e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad2b-8ccc-627b-208b" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">6</characteristic>
@@ -3185,6 +3275,11 @@
                 <repeat field="selections" scope="c8ca-e479-2176-1b40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac5d-8240-f950-a068" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">8</characteristic>
@@ -3284,6 +3379,11 @@
                 <repeat field="selections" scope="299c-5103-baa8-8725" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa39-3f43-07c3-7f13" repeats="2" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Move" typeId="ed7a-c503-b270-885d">7</characteristic>
@@ -3377,6 +3477,11 @@
                 <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="314a-df0e-b55d-4554" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="4c63-a621-3061-08b9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4204-2b1a-4e10-3498" repeats="2" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="increment" field="ed7a-c503-b270-885d" value="1">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a80-020e-3d3b-bb34" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
