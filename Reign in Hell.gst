@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="22f0-18eb-8fd1-99fa" name="Reign in Hell" revision="8" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="22f0-18eb-8fd1-99fa" name="Reign in Hell" revision="9" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <costTypes>
     <costType id="cc7c-c1bb-7f20-8378" name=" Souls" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
@@ -200,6 +200,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ef8-95fd-da74-b097" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -233,7 +236,11 @@
                 <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="517a-7a77-fef0-f5a3" name="Campaign Game" hidden="false" collective="false" import="true" type="upgrade"/>
+            <selectionEntry id="517a-7a77-fef0-f5a3" name="Campaign Game" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Souls" typeId="cc7c-c1bb-7f20-8378" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -398,7 +405,7 @@
       <profiles>
         <profile id="9a36-e6f9-f0f7-1fd1" name="Screaming Shield" hidden="false" typeId="b9e7-88a7-7587-d127" typeName="Leader Relic">
           <characteristics>
-            <characteristic name="Description" typeId="75ad-a539-0c81-ff3d">This demon may never be hit on anything better than a 3.</characteristic>
+            <characteristic name="Description" typeId="75ad-a539-0c81-ff3d">This demon may never be hit on anything lower than a 3+ (they may not be hit on 2).</characteristic>
           </characteristics>
         </profile>
       </profiles>
