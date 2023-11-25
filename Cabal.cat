@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f7f0-7dd9-23fe-e40c" name="Cabal" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="22f0-18eb-8fd1-99fa" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="daba-95b7-302e-2a1e" name="Warrior" hidden="false" collective="false" import="true" targetId="1d82-4f9a-8828-9e24" type="selectionEntry"/>
     <entryLink id="b0b7-3ab3-a8f5-2c9e" name="Void Demon" hidden="false" collective="false" import="true" targetId="c9c4-3f0d-a7eb-2249" type="selectionEntry"/>
@@ -3680,7 +3680,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3d9-e68e-c119-2102" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e3a1-fd4a-c2c8-daa3" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="c7ae-e78f-9545-6e73" value="1">
